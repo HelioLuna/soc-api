@@ -27,7 +27,7 @@ public class Produto implements Serializable {
 
     @NotBlank(message = "Nome obrigatório.", groups = {Save.class, Update.class})
     @Column(length = 75, nullable = false)
-    private String name;
+    private String nome;
 
     @NotNull(message = "Preço unitário obrigatório", groups = {Save.class, UpdateRole.class})
     @Column(nullable = false)

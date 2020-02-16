@@ -25,6 +25,6 @@ public class Cliente implements Serializable {
 
     @NotBlank(message = "Nome obrigatório.", groups = {Save.class, Update.class})
     @Column(length = 75, nullable = false)
-    private String name;
+    private String nome;
 
 }
