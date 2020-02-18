@@ -15,8 +15,8 @@ public class ClienteServiceImpl implements ClienteService {
     private ClienteRepository clienteRepository;
 
     @Override
-    public List<Cliente> findAllByName(String nome) {
-        return clienteRepository.findAllByName("%"+nome+"%");
+    public List<Cliente> findAll() {
+        return clienteRepository.findAll();
     }
 
 

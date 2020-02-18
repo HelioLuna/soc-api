@@ -16,9 +16,9 @@ public class ClienteResource {
     @Autowired
     private ClienteService clienteService;
 
-    @GetMapping("/listarClientesPorNome/{nome}")
-    public ResponseEntity<List<Cliente>> findAllByName(@PathVariable("nome") String nome) {
-        List<Cliente> clientes = clienteService.findAllByName(nome);
-        return ResponseEntity.ok(clientes);
+    @GetMapping("/listarClientes")
+    public ResponseEntity<List<Cliente>> listarClientes() {
+        List<Cliente> clientes = clienteService.findAll();
+        return clientes != null ? ResponseEntity.ok(clientes) : ResponseEntity.notFound().build();
     }
 }

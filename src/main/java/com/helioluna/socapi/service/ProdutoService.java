@@ -1,12 +1,12 @@
 package com.helioluna.socapi.service;
 
-import com.helioluna.socapi.domain.Cliente;
+import com.helioluna.socapi.domain.Produto;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
 
 @Component
-public interface ClienteService {
+public interface ProdutoService {
 
-    List<Cliente> findAll();
+    List<Produto> findAll();
 }
