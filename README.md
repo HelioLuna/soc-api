@@ -26,7 +26,7 @@ GET - localhost:8080/api/cliente/listarClientes
 
 Produto
 ```
-GET - localhost:8080/api/produto/listarproduto
+GET - localhost:8080/api/produto/listarProdutos
 ```
 
 Pedido
