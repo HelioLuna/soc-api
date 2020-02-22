@@ -20,7 +20,7 @@ public class ProdutoResource {
     private ProdutoService produtoService;
 
     @GetMapping("/listarProdutos")
-    public ResponseEntity<List<Produto>> listarClientes() {
+    public ResponseEntity<List<Produto>> listarProdutos() {
         List<Produto> produtos = produtoService.findAll();
         return produtos != null ? ResponseEntity.ok(produtos) : ResponseEntity.notFound().build();
     }
