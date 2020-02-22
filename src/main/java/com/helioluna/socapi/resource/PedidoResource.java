@@ -27,7 +27,7 @@ public class PedidoResource {
         return ResponseEntity.status(HttpStatus.CREATED).body(pedidoResult);
     }
 
-    @PostMapping("/alterar")
+    @PutMapping("/alterar")
     public ResponseEntity<Pedido> alterar(@RequestBody @Validated({Update.class}) Pedido pedido) {
         Pedido pedidoResult = pedidoService.save(pedido);
         return ResponseEntity.ok(pedidoResult);
